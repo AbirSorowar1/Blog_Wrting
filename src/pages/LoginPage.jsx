@@ -9,7 +9,6 @@ const LoginPage = () => {
     const { user, loading, error } = useSelector((state) => state.auth);
 
     useEffect(() => {
-        // If user is already logged in, redirect to home
         if (user) {
             navigate('/home');
         }
